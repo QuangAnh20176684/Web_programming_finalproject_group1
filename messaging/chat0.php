@@ -27,6 +27,7 @@ if(empty($_SESSION['id'])){
     </style>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <style>
         .nav-link:hover {
@@ -45,9 +46,6 @@ if(empty($_SESSION['id'])){
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="chat0.php">Chat</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="../videostream/videostream.php">Video</a>
             </li>
             <li class="nav-item active">
                 <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'doctor'): ?>

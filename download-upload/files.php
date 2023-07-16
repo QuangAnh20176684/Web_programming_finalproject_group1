@@ -22,18 +22,17 @@ if(!$_SESSION['id']){
 
 
 <nav class="navbar navbar-dark bg-primary">
-    <a href="../pro.php">Profile</a>
-    <a href="../download-upload/files.php">Files</a>
-    <a href="../messaging/chat0.php">Chat</a>
-    <a href="../videostream/videostream.php">Video</a>
+    <a class="nav-link" href="../pro.php">Profile</a>
+    <a class="nav-link" href="../download-upload/files.php">Files</a>
+    <a class="nav-link" href="../messaging/chat0.php">Chat</a>
     <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'doctor'): ?>
-        <a href="../data/visualise.php">Doctor Space</a>
+        <a class="nav-link" href="../data/visualise.php">Doctor Space</a>
     <?php endif; ?>
-    <a href="../disconnect.php">Sign out</a>   
+    <a class="nav-link" href="../disconnect.php">Sign out</a>   
     <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'doctor'): ?>
-        <a href="../app_doc.php">Appointments</a>
+        <a class="nav-link" href="../app_doc.php">Appointments</a>
     <?php else: ?>
-        <a href="../app1.php">Appointments</a>
+        <a class="nav-link" href="../app1.php">Appointments</a>
     <?php endif; ?>
 
 </nav>

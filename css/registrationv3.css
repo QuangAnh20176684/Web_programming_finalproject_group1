@@ -1,0 +1,305 @@
+:root {
+    --primary-color: #247cff;
+    --second-color: rgb(135,206,250);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --background-color-input: rgba(0,0,0,0.2);
+
+
+
+}
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* whole window  */
+.modal {
+    /* position: fixed;  */
+    position: relative; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex; /* this attribute + modal__body margin auto move the box to the center*/
+    flex-direction: column;
+}
+
+/*  background Image */
+.modal__overlay {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url(../images/gallery/female-doctor-with-presenting-hand-gesture.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+    position: fixed;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+/* a box */
+.modal__body {
+    margin: auto; /* this attribute + modal display flex move the box to the center */ 
+    margin-top: 95px;
+    margin-bottom: 95px;
+    position: relative;
+    z-index: 3; /* a box > background Image  */
+    width: 500px;
+    background-color: var(--background-color-input);
+    border-radius: 5px; 
+    padding: 0 32px;
+}
+
+/* Register / I already have an account */
+.auth-form__header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* This allows to register and connect away from each other */
+    padding: 0 12px;
+}
+
+.auth-form__heading {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+/* Letter color changes when text is highlighted */
+h3::selection {
+    background-color: blue;
+    color: #333;
+    text-shadow: none; 
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer; /* When you hover the mouse, it turns into a mouse pointer */
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 12px;
+}
+
+/* Last name / First name / Email / Password / Password confirmation */
+.auth-form__input {
+    background-color: var(--background-color-input);
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px; /* This helps the email text to be spaced at a distance, not close to the input box */
+    font-size: 1.4rem;
+    border-radius: 2px; 
+    border: 1px solid var(--background-color-input);
+    outline: none;
+    color: var(--white-color);
+}
+
+::placeholder {
+    color: var(--white-color);
+}
+
+.auth-form__input:focus {
+    border-color: #888; /* When we point to the input frame, it displays this color, if we don't add it, it will turn blue */
+}
+
+/* Terms of Use / Privacy Policy */
+.auth-form__aside {
+    margin-top: 30px;
+}
+
+.auth-form__policy-text {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.8rem; 
+    text-align: center; 
+    padding: 0 0 12px;
+}
+
+.auth-form__text-link {
+    color: var(--second-color);
+    text-decoration: none; 
+}
+
+/* Button Return to homepage / Button Register */
+.auth-form__control {
+    margin-top: 5px;
+    display: flex;
+    /*justify-content: flex-end;*/
+    justify-content: center;
+}
+
+.auth-form__control-link {
+    text-decoration: none;
+}
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    outline: none;
+    color: var(--text-color);
+    margin: 20px 3px;
+    align-items: center; 
+    display: flex; 
+    justify-content: center; 
+    line-height: 1.6rem;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white-color);
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.auth-form__control-back {
+    margin-right: 8px;
+}
+
+.btn.btn--primary:hover {
+    background-color: blue;
+}
+
+.auth-form__switch-btn:hover {
+    background-color: blue;
+}
+
+/* Javascript text */
+.form-message {
+    text-align: left;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.auth-form__group.invalid .auth-form__input2 {
+    border-color: #f33a58;
+}
+
+.auth-form__group.invalid .form-message {
+    color: #f33a58;
+}
+
+/* Footer */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+.footer {
+    z-index: 3;
+    border-top: 8px solid var(--second-color);
+    background-color: var(--white-color);
+    padding-top: 30px;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase; 
+    color: var(--text-color);
+    padding-bottom: 8px;
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none; 
+}
+
+/* footer */
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #737373;
+    padding: 6px 0;
+    display: flex; 
+    align-items: center;
+}
+
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0 0;
+}
+
+.footer__bottom {
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    margin-top: 30px;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #737373;
+    margin: 3px 0;
+}
+
+.footer__img {
+    padding: 0;
+    margin: 0;
+}
+
+.auth-form__bonus {
+    margin-top: -23px;
+}

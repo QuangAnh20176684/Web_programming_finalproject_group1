@@ -52,9 +52,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
                 <a class="nav-link" href="chat0.php">Chat</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="../videostream/videostream.php">Video</a>
-            </li>
-            <li class="nav-item active">
             <?php if(isset($_SESSION['type']) && $_SESSION['type'] == 'doctor'): ?>
                 <a  class="nav-link"href="../app_doc.php">Appointments</a>
             <?php else: ?>

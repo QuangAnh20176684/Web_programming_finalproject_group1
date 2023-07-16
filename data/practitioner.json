@@ -1,0 +1,142 @@
+[
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-04-03T11:20:03+01:00"
+        },
+        "identifier": 1,
+        "active": true,
+        "name": "Nada",
+        "gender": "Woman",
+        "birthDate": "29\/08\/1987",
+        "address": "Paris, France",
+        "communication": [
+            {
+                "language": {
+                    "text": "Fran\u00e7ais"
+                }
+            },
+            {
+                "language": {
+                    "text": "English"
+                }
+            }
+        ]
+    },
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-03-07T17:20:03+01:00"
+        },
+        "identifier": 2,
+        "active": true,
+        "name": "Hien",
+        "gender": "Woman",
+        "birthDate": "25\/04\/2001",
+        "address": "Paris, France",
+        "communication": [
+            {
+                "language": {
+                    "text": "Fran\u00e7ais"
+                }
+            },
+            {
+                "language": {
+                    "text": "English"
+                }
+            }
+        ]
+    },
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-03-07T17:20:03+01:00"
+        },
+        "identifier": 3,
+        "active": true,
+        "name": "Thomas",
+        "gender": "Man",
+        "birthDate": "21\/03\/1963",
+        "address": "Paris, France",
+        "communication": [
+            {
+                "language": {
+                    "text": "Fran\u00e7ais"
+                }
+            },
+            {
+                "language": {
+                    "text": "English"
+                }
+            }
+        ]
+    },
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-05-12T06:47:34+02:00"
+        },
+        "identifier": 22,
+        "active": true,
+        "name": "Not available",
+        "gender": "Not available",
+        "birthDate": "Not available",
+        "address": "Not available",
+        "communication": [
+            {
+                "language": {
+                    "text": "Fran\u00e7ais"
+                }
+            },
+            {
+                "language": {
+                    "text": "English"
+                }
+            }
+        ]
+    },
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-05-12T15:39:20+02:00"
+        },
+        "identifier": 23,
+        "active": true,
+        "name": "Not available",
+        "gender": "Not available",
+        "birthDate": "Not available",
+        "address": "Not available",
+        "communication": [
+            {
+                "language": {
+                    "text": "Fran\u00e7ais"
+                }
+            }
+        ]
+    },
+    {
+        "resourceType": "Practitioner",
+        "id": 4,
+        "meta": {
+            "lastUpdated": "2023-06-22T14:31:00+02:00"
+        },
+        "identifier": null,
+        "active": true,
+        "name": "Not available",
+        "gender": "Not available",
+        "birthDate": "Not available",
+        "address": "Not available",
+        "communication": [
+            {
+                "language": {
+                    "text": "English"
+                }
+            }
+        ]
+    }
+]

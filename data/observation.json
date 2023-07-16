@@ -1,0 +1,42 @@
+[
+    {
+        "resourceType": "Observation",
+        "id": 3,
+        "meta": {
+            "lastUpdated": "2023-03-07T17:20:03+01:00"
+        },
+        "identifier": 3,
+        "status": "Final",
+        "subject": {
+            "reference": "Patient\/1",
+            "display": "Johnson"
+        },
+        "effectiveDateTime": "28\/07\/2021",
+        "valueQuantity": {
+            "value": 36.5,
+            "unit": "Cel",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "Cel"
+        }
+    },
+    {
+        "resourceType": "Observation",
+        "id": 3,
+        "meta": {
+            "lastUpdated": "2023-03-07T17:20:03+01:00"
+        },
+        "identifier": 4,
+        "status": "Modified +",
+        "subject": {
+            "reference": "Patient\/2",
+            "display": "Linda"
+        },
+        "effectiveDateTime": "28\/03\/2022",
+        "valueQuantity": {
+            "value": 36,
+            "unit": "Cel",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "Cel"
+        }
+    }
+]
